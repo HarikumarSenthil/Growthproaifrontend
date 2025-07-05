@@ -34,12 +34,6 @@ const App = () => {
   }
 
   await fetchData(formData);
-
-
-  setFormData({
-    name: '',
-    location: ''
-  });
 };
 
 
