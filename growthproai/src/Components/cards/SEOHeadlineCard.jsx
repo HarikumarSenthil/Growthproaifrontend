@@ -1,6 +1,6 @@
 import React from 'react';
 import { MapPin, RefreshCw } from 'lucide-react';
-import LoadingSpinner from '../Common/LoadingSpinner';
+import LoadingSpinner from '../common/LoadingSpinner';
 
 const SEOHeadlineCard = ({ 
   headline, 
