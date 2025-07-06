@@ -12,7 +12,7 @@ const SEOHeadlineCard = ({
       <div className="flex items-center justify-between mb-4">
         <h3 className="md:text-lg text-xs font-semibold text-gray-800 flex items-center gap-2">
           <MapPin className="w-8 h-8 text-purple-600" />
-          AI-Generated SEO Headline
+          AI-Generated SEO 
         </h3>
         <button
             onClick={onRegenerate}
