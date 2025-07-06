@@ -9,8 +9,8 @@ const BusinessForm = ({
   error 
 }) => {
   return (
-    <div className="bg-white rounded-xl shadow-lg p-6 mb-8">
-      <h2 className="md:text-2xl text-md font-semibold text-gray-800 mb-6 flex items-center gap-2">
+    <div className="bg-gray-700 rounded-xl shadow-lg p-6 mb-8">
+      <h2 className="md:text-2xl text-md font-semibold text-white mb-6 flex items-center gap-2">
         <Building2 className="w-6 h-6 text-blue-600" />
         Business Information
       </h2>
@@ -18,7 +18,7 @@ const BusinessForm = ({
       <form onSubmit={onSubmit} className="space-y-4">
         <div className="grid md:grid-cols-2 gap-4">
           <div>
-            <label htmlFor="name" className="block text-sm font-medium text-gray-700 mb-2">
+            <label htmlFor="name" className="block text-sm font-medium text-white mb-2">
               Business Name
             </label>
             <input
@@ -27,14 +27,14 @@ const BusinessForm = ({
               name="name"
               value={formData.name}
               onChange={onInputChange}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 text-white focus:ring-blue-500 focus:border-blue-500 transition-colors"
               placeholder="Enter your business name"
               required
             />
           </div>
           
           <div>
-            <label htmlFor="location" className="block text-sm font-medium text-gray-700 mb-2">
+            <label htmlFor="location" className="block text-sm font-medium text-white mb-2">
               Location
             </label>
             <input
@@ -43,7 +43,7 @@ const BusinessForm = ({
               name="location"
               value={formData.location}
               onChange={onInputChange}
-              className="w-full px-4 py-3 border border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
+              className="w-full px-4 py-3 border text-white border-gray-300 rounded-lg focus:ring-2 focus:ring-blue-500 focus:border-blue-500 transition-colors"
               placeholder="Enter your location"
               required
             />

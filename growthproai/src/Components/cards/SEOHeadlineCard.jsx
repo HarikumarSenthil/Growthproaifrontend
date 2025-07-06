@@ -17,7 +17,7 @@ const SEOHeadlineCard = ({
         <button
             onClick={onRegenerate}
             disabled={isRegenerating}
-            className="bg-purple-600 hover:bg-purple-700 disabled:bg-purple-400 text-white px-4 md:text-md py-2 rounded-lg transition-colors flex items-center gap-2 text-sm min-w-[140px] justify-center"
+            className="bg-purple-600 hover:bg-purple-700 cursor-pointer disabled:bg-purple-400 text-white px-4 md:text-md py-2 rounded-lg transition-colors flex items-center gap-2 text-sm min-w-[140px] justify-center"
             >
             <span className={`${isRegenerating ? 'opacity-100' : 'opacity-0'} transition-opacity absolute`}>
                 <LoadingSpinner text="Generating..." />
