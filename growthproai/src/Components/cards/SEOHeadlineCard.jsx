@@ -14,20 +14,31 @@ const SEOHeadlineCard = ({
           <MapPin className="w-8 h-8 text-purple-600" />
           AI-Generated SEO 
         </h3>
-        <button
-            onClick={onRegenerate}
-            disabled={isRegenerating}
-            className="bg-purple-600 hover:bg-purple-700 cursor-pointer disabled:bg-purple-400 text-white px-4 md:text-md py-2 rounded-lg transition-colors flex items-center gap-2 text-sm min-w-[140px] justify-center"
-            >
-            <span className={`${isRegenerating ? 'opacity-100' : 'opacity-0'} transition-opacity absolute`}>
-                <LoadingSpinner text="Generating..." />
-            </span>
+       <button
+          onClick={onRegenerate}
+          disabled={isRegenerating}
+          className="bg-purple-600 hover:bg-purple-700 disabled:bg-purple-400 text-white px-4 py-2 rounded-lg transition-colors flex items-center justify-center gap-2 text-sm md:text-base min-w-[120px] sm:min-w-[140px] relative w-full max-w-xs sm:max-w-sm"
+        >
+        
+          <span
+            className={`${
+              isRegenerating ? 'opacity-100' : 'opacity-0'
+            } transition-opacity absolute`}
+          >
+            <LoadingSpinner text="Generating..." />
+          </span>
 
-            <span className={`${isRegenerating ? 'opacity-0' : 'opacity-100'} transition-opacity flex items-center gap-2`}>
-                <RefreshCw className="w-4 h-4" />
-                Regenerate
-            </span>
-            </button>
+         
+          <span
+            className={`${
+              isRegenerating ? 'opacity-0' : 'opacity-100'
+            } transition-opacity flex items-center gap-2`}
+          >
+            <RefreshCw className="w-4 h-4" />
+            Regenerate
+          </span>
+        </button>
+
 
       </div>
       
