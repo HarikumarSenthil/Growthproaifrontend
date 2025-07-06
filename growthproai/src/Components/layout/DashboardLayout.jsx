@@ -5,7 +5,7 @@ import SpotlightCard from '../../../reactbits/SpotlightCard/SpotlightCard';
 import { Sprout } from 'lucide-react';
 const DashboardLayout = ({ children }) => {
   return (
-    <div className="min-h-screen p-4 bg-black">
+    <div className="min-h-screen bg-gray-900">
        <SpotlightCard>
       <div className="max-w-4xl mx-auto">
         <Header />
